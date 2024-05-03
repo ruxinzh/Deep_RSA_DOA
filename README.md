@@ -7,24 +7,24 @@ This is the code for paper "Antenna Failure Resilience: Deep Learning-Enabled Ro
 
 ## training 
 Without sparse augmentation model
-''' sh
-'''
+```sh
+```
 With sparse augmentation model
-''' sh
-'''
+``` sh
+```
 ## evaluation 
 Single target accuracy
-''' sh
-'''
+``` sh
+```
 Two target accuracy
-''' sh
-'''
+``` sh
+```
 Seperatebility
-''' sh
-'''
+``` sh
+```
 Complexity
-''' sh
-'''
+``` sh
+```
 ## Real World dataset 
 please refer README in the folder 'real_World_DOA_dataset'
 
