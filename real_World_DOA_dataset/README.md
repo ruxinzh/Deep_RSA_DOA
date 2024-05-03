@@ -22,11 +22,37 @@ This comprehensive data collection resulted in 195 high-SNR signals representing
 </p>
 
 
-To enhance the complexity and usability of the dataset, we superimposed these signals to simulate scenarios with multiple targets. It is important to note that this dataset was specifically curated for testing and demonstrating the efficacy of our network in real-world conditions, and was not used during the training phase. This setup ensures that the dataset serves as a robust tool for accurately assessing the performance of DOA estimation models.
+To enhance the complexity and usability of the dataset, we superimposed these signals to simulate scenarios with multiple targets. Here are some examples of FFT spectrum on multiple targets signals. 
+<p align="center">
+  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/real_World_DOA_dataset/fig/multiExamples.png" width="2200" height="400">
+</p>
 
+## Dataset structure 
+data.mat contains:
+- ang_list (1 x 195): the ground truth DOA of each signal
+- bv_list (195 x 86): 195 raw signal with 86 antennas 
 
+## How to use 
+Matlab
+``` matlab
+load('data.mat')
+```
+python 
+``` python
+import scipy.io
+data = scipy.io.loadmat('data.mat')
+```
 
-
-
-``` sh
+If this dataset contributes to your research, please acknowledge its use with the following citation:
+``` LATEX
+@ARTICLE{10348517,
+  author={Zheng, Ruxin and Sun, Shunqiao and Liu, Hongshan and Chen, Honglei and Li, Jian},
+  journal={IEEE Sensors Journal}, 
+  title={Interpretable and Efficient Beamforming-Based Deep Learning for Single Snapshot DOA Estimation}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Direction-of-arrival estimation;Estimation;Deep learning;Covariance matrices;Sensors;Mathematical models;Array signal processing;Single snapshot DOA estimation;array signal processing;automotive radar;interpretability;deep learning},
+  doi={10.1109/JSEN.2023.3338575}}
 ```
