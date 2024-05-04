@@ -3,7 +3,7 @@ This is the code for paper "Antenna Failure Resilience: Deep Learning-Enabled Ro
 
 ## Simulated dataset generation for trianing and validation 
 ``` sh
-python scr/dataset_gen.py --output_dir '../' --num_samples_val 1024 --num_samples_train 100000 --N 10 --max_targets 3 
+python scr/dataset_gen.py --output_dir './' --num_samples_val 1024 --num_samples_train 100000 --N 10 --max_targets 3 
 ```
 
 ## Network architectures 
