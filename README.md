@@ -44,14 +44,19 @@ with simulated data
 ``` sh
 python run_eval.py --evaluation_mode 'examples'
 ```
+Expected outputs:
+
 with real world data 
 ``` sh
 python run_eval.py --evaluation_mode 'examples' --real True
 ```
+Expected outputs:
 
 ## Real World dataset 
 please refer README in the folder 'real_World_DOA_dataset'
 
+## Enviroment 
+The Conda environment required for this project is specified in the file 'conda_env.txt'. This file contains a list of all the necessary Python packages and their versions to ensure compatibility and reproducibility of the project's code.
 
 
 
