@@ -46,7 +46,7 @@ python run_eval.py --evaluation_mode 'examples'
 ```
 with real world data 
 ``` sh
-python run_eval.py --evaluation_mode 'examples' --load
+python run_eval.py --evaluation_mode 'examples' --real True
 ```
 
 ## Real World dataset 
