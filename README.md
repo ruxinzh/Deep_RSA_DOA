@@ -9,7 +9,7 @@ python scr/dataset_gen.py --output_dir './' --num_samples_val 1024 --num_samples
 ## Network architectures 
 
 <p align="center">
-  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Network.png" width="1000" height="400">
+  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Network.png" width="700">
 </p>
 
 ## Training 
@@ -41,8 +41,8 @@ python run_eval.py --num_simulations 1000 --num_antennas 10 --evaluation_mode 'a
 
 Expected outputs: ULA(left), SLA(right)
 <p align="center">
-  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Accuracy1_ULA.png" width="500" height="300">
-  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Accuracy1_SLA.png" width="500" height="300">
+  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Accuracy1_ULA.png" width="300">
+  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Accuracy1_SLA.png" width="300">
 </p>
 
 ### Two target accuracy
