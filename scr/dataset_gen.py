@@ -22,7 +22,7 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Generate dataset for antenna signal processing.')
-    parser.add_argument('--output_dir', type=str, default='../', 
+    parser.add_argument('--output_dir', type=str, default='./', 
                         help='Base directory for output data')
     parser.add_argument('--num_samples_val', type=int, default=1024, 
                         help='Number of validation samples to generate')

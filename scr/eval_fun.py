@@ -104,7 +104,7 @@ def plot_results(snr_levels, mse_metrics):
 
     plt.title('MSE vs SNR for Different DOA Estimation Methods')
     plt.xlabel('SNR (dB)')
-    plt.ylabel('Mean Squared Error (deg)')
+    plt.ylabel('Mean Squared Error (deg^2)')
     plt.legend()
     plt.grid(True)
     plt.show()
@@ -316,7 +316,9 @@ def run_examples(signal,num_antennas=10,sparse_flag = True):
     ang_list, spec1 = IAA(signal)
     spec1 = spec1/np.max(spec1)
     axs[1].plot(ang_list, spec0, label='DBF', color='blue',linewidth=2)  
-    axs[1].plot(ang_list, spec1, label='IAA', color='red',linewidth=2)         
+    axs[1].plot(ang_list, spec1, label='IAA', color='red',linewidth=2)  
+    axs[1].axvline(0, color='black', linestyle='--', linewidth=1.5) 
+    axs[1].axvline(7, color='black', linestyle='--', linewidth=1.5)        
     axs[1].set_title('DBF vs IAA') 
     axs[1].set_xlabel('Angle [degree]')
     axs[1].set_ylabel('Magnitude')
@@ -330,7 +332,9 @@ def run_examples(signal,num_antennas=10,sparse_flag = True):
     #MLP
     ang_list, spec2 = DLapproach(signal,mlp_model,device)
     spec2 = spec2/np.max(spec2)
-    axs[2].plot(ang_list, spec2, color='blue',linewidth=2)         
+    axs[2].plot(ang_list, spec2, color='blue',linewidth=2)   
+    axs[2].axvline(0, color='black', linestyle='--', linewidth=1.5) 
+    axs[2].axvline(7, color='black', linestyle='--', linewidth=1.5)         
     axs[2].set_title('MLP') 
     axs[2].set_xlabel('Angle [degree]')
     axs[2].set_ylabel('Magnitude')
@@ -343,7 +347,9 @@ def run_examples(signal,num_antennas=10,sparse_flag = True):
     #Sparse
     ang_list, spec3 = DLapproach(signal,sparse_model,device)
     spec3 = spec3/np.max(spec3)
-    axs[3].plot(ang_list, spec3, color='blue',linewidth=2)         
+    axs[3].plot(ang_list, spec3, color='blue',linewidth=2) 
+    axs[3].axvline(0, color='black', linestyle='--', linewidth=1.5) 
+    axs[3].axvline(7, color='black', linestyle='--', linewidth=1.5)           
     axs[3].set_title('Ours') 
     axs[3].set_xlabel('Angle [degree]')
     axs[3].set_ylabel('Magnitude')
@@ -352,6 +358,7 @@ def run_examples(signal,num_antennas=10,sparse_flag = True):
     axs[3].set_xticks(np.arange(-30, 31, 10))  
     axs[3].set_yticks([0, 0.5, 1])
     axs[3].grid(True) 
+    plt.show()
     return ang_list, spec0, spec1, spec2, spec3
 
 ##################################################################
