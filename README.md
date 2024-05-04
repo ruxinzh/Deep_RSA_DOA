@@ -41,8 +41,8 @@ python run_eval.py --num_simulations 1000 --num_antennas 10 --evaluation_mode 'a
 
 Expected outputs: ULA(left), SLA(right)
 <p align="center">
-  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Accuracy1_ULA.png" width="300">
-  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Accuracy1_SLA.png" width="300">
+  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Accuracy1_ULA.png" width="400">
+  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Accuracy1_SLA.png" width="400">
 </p>
 
 ### Two target accuracy
@@ -53,8 +53,8 @@ python run_eval.py --num_simulations 1000 --num_antennas 10 --evaluation_mode 'a
 
 Expected outputs: ULA(left), SLA(right)
 <p align="center">
-  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Accuracy2_ULA.png" width="500" height="300">
-  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Accuracy2_SLA.png" width="500" height="300">
+  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Accuracy2_ULA.png" width="400">
+  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Accuracy2_SLA.png" width="400">
 </p>
 
 ### Seperatebility
@@ -65,8 +65,8 @@ python run_eval.py --num_simulations 1000 --num_antennas 10 --evaluation_mode 's
 
 Expected outputs: ULA(left), SLA(right)
 <p align="center">
-  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Separate_ULA.png" width="500" height="300">
-  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Separate_SLA.png" width="500" height="300">
+  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Separate_ULA.png" width="400">
+  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Separate_SLA.png" width="400">
 </p>
 
 ### Complexity
@@ -89,10 +89,10 @@ python run_eval.py --evaluation_mode 'examples'
 Expected outputs:
 
 <p align="center">
-  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Example_ULA.png" width="1000" height="250">
+  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Example_ULA.png" width="800">
 </p>
 <p align="center">
-  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Example_SLA.png" width="1000" height="250">
+  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Example_SLA.png" width="800">
 </p>
 
 #### With real world data 
@@ -103,10 +103,10 @@ python run_eval.py --evaluation_mode 'examples' --real True
 
 Expected outputs:
 <p align="center">
-  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Example_ULA_real.png" width="1000" height="250">
+  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Example_ULA_real.png" width="800">
 </p>
 <p align="center">
-  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Example_SLA_real.png" width="1000" height="250">
+  <img src="https://github.com/ruxinzh/Deep_RSA_DOA/blob/main/fig/Example_SLA_real.png" width="800">
 </p>
 ## Real World dataset 
 please refer README in the folder 'real_World_DOA_dataset'
